@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3DMENTE RG - DIESÑO E IMPRESION 3D</title> 
+        <link rel="apple-touch-icon" sizes="180x180" href="../../media/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../media/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../media/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../media/favicon/site.webmanifest">
+
+        <!--GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet"> 
+
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!-- MY CSS -->
+        <link rel="stylesheet" href="../../css/main.css">
+
+        <!-- MY JS -->
+        <script type="text/javascript" src="../../js/script.js"></script>
+        <script type="text/javascript" src="../../js/trofeos.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <div class="container start-50" style="z-index: 1;">
+          <nav class="navbar navbar-expand-lg navbar-light fs-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../../index.html">
+                <img src="../../media/logo 3.0.svg" alt="LOGO 3DMENTERG" width="100">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../trabajos.html">TRABAJOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      
+        <!-- INFO SECTION -->
+        <section class="info">
+          <div class="container">
+            <p class="text-center fs-1">NOS ESPECIALIZAMOS EN EL DISEÑO E IMPRESON 3D</p>
+            <p class="text-center fs-3 info-text">GRACIAS A LA IMPRESION 3D PODEMOS CREAR CUALQUIER TIPO DE FORMA, 
+              YA SEA PARA HACER UNA PIEZA DE REPUESTO, UN TROFEO, ALGUN REGALO, O ALGO DE DECORACIÓN, LAS POSIBILIDADES SON INFINITAS
+            </p>
+          </div>
+        </section>
+
+        <!-- ULTIMOS TRABAJOS SECTION -->
+        <section class="ultimos_trabajos">
+          <div class="container">
+            <p class="text-center fs-1 mt-5">TROFEOS</p>
+            <div class="container mb-5">
+              <!-- LISTA DE TRABAJOS -->
+              <div id="cards" class="row row-cols-1 row-cols-md-3 g-4">
+
+                <script>
+                  cards_constructor({lista_trabajo: trofeos, btn: "contactanos", page: "trofeos"});
+                </script>
+
+              </div>
+
+            </div>
+          </div>
+        
+        </section>
+
+        <!-- BOOTSTRAP SCRIPT -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">© 2022 3Dmente RG</p>
+          
+            <a href="../../index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+              <img class="bi me-2" width="40" src="../../media/logo 3.0.svg" alt="LOGO 3DMENTERG">
+            </a>
+          
+            <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="../../index.html" class="nav-link px-2 text-muted">HOME</a></li>
+              <li class="nav-item active"><a href="../trabajos.html" class="nav-link px-2 text-muted">TRABAJOS</a></li>
+              <li class="nav-item"><a href="../contacto.html" class="nav-link px-2 text-muted">CONTACTO</a></li>
+              <li class="nav-item"><a href="../faqs.html" class="nav-link px-2 text-muted">FAQs</a></li>
+            </ul>
+          </footer>
+        </div>
+    </body>
+</html>
